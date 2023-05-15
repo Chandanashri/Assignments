@@ -1,0 +1,21 @@
+<p>car-info works!</p>
+This is my custom component called Cars!
+
+ 
+
+<!-- <h1>{{getName()}}</h1>
+
+<h1>{{getModel()}}</h1>
+
+<h1>{{getYear()}}</h1> -->
+
+<div *ngFor = "let cars of getCars()" [hidden]="hide">
+
+{{cars.name}}
+{{cars.model}}
+{{cars.year}}</div>
+
+<!-- <h2 [hidden]="hide">{{getCars()}}</h2> -->
+<br><br>
+
+<button (click)="toggole()">Toggole Me</button>
